@@ -3,7 +3,7 @@
 STEPS TO SET UP:
 1. When downloading code and opening as project please allow time for shared indexes to download before continuing
 2. Head to the application.yml located in "/src/main/resources/"
-3. Change "access-key", "secret-key" and "uri" to your person AWS credentials and end-point.
+3. Set "static","access-key", "secret-key" and "uri" to your person AWS credentials and end-point. (NOTE next to static you set your AWS SQS region ie. us-east-2)
 4. Head to AwsSQSConfig.java located in "/src/main/java/com.peymanapp.springbootawssqsexe/config/"
 5. Set your region (line 29)
 

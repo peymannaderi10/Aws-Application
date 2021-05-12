@@ -7,7 +7,8 @@ STEPS TO SET UP:
 4. Head to AwsSQSConfig.java located in "/src/main/java/com.peymanapp.springbootawssqsexe/config/"
 5. Set your region (line 29)
 
-OPTIONAL{
+OPTIONAL
+{
 6. Head to SpringbootAwsSqsExeApplication.java located in "/src/main/java/com.peymanapp.springbootawssqsexe/"  
 7. Uncomment the SQS listener in order to load messages to the console, make sure to enter queue name within parameters.
 }

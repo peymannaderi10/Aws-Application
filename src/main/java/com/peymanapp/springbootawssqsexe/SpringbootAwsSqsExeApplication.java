@@ -33,11 +33,11 @@ public class SpringbootAwsSqsExeApplication {
     @GetMapping
     public void sendMessageToQueue() throws JsonProcessingException {
 
-        HashMap<String, String> map = new HashMap<>();
-        map.put("key", "value");
-        map.put("foo", "bar");
-        map.put("aa", "bb");
-        String json = new ObjectMapper().writeValueAsString(map);
+        HashMap<String, String> person = new HashMap<>();
+        map.put("Name", "Peyman");
+        map.put("Age", "21");
+        map.put("Major", "Computer Science");
+        String json = new ObjectMapper().writeValueAsString(person);
         queueMessagingTemplate.send(endPoint, MessageBuilder.withPayload(json).build());
     }
     /*@SqsListener("peyman-queue") //ENTER QUEUE NAME HERE

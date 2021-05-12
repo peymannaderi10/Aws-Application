@@ -13,7 +13,7 @@ OPTIONAL{
 }
 
 8. Run the SpringbootAwsSqsExeApplication.java file
-9. Type "http://localhost:8080/" into browser search bar to send JSON format message to queue
+9. Type "localhost:8080" into browser search bar to send JSON format message to queue
 10. If optional part was complete the json format message will automatically display in console, if not poll messages in AWS SQS.
 
 Thank you!

@@ -1,10 +1,10 @@
 cloud:
     aws:
       region:
-        static: us-east-2
+        static: REGION HERE
         auto: false
       credentials:
-        access-key: AKIAUHJUG57RA2CFYLWV
-        secret-key: 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
+        access-key: ACCESS KEY HERE
+        secret-key: SECRET KEY HERE
       end-point:
-        uri: https://sqs.us-east-2.amazonaws.com/290556669922/peyman-queue
+        uri: URI LINK HERE

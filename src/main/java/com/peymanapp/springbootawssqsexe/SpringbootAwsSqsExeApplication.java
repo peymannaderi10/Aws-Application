@@ -40,10 +40,10 @@ public class SpringbootAwsSqsExeApplication {
         String json = new ObjectMapper().writeValueAsString(map);
         queueMessagingTemplate.send(endPoint, MessageBuilder.withPayload(json).build());
     }
-    /*@SqsListener("peyman-queue") //ENTER QUEUE NAME HERE
+    @SqsListener("peyman-queue") //ENTER QUEUE NAME HERE
     public void loadMessageFromSQS(String message){
         logger.info("message from SQS Queue {}",message);
-    }*/
+    }
     public static void main(String[] args) {
         SpringApplication.run(SpringbootAwsSqsExeApplication.class, args);
     }
